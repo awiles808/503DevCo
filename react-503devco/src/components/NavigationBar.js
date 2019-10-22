@@ -2,21 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
-// import fiveothreelogo from '../assests/fiveothreelogo.png';
+import fiveothreelogo from '../assets/fiveothreelogo.png'
 
 const Styles = styled.div`
   .navbar {
-    background-color: #222;
-  
+    background-color: ##FFFFFF;
+    
     
   }
+ 
+ 
   a, .nav-link{
-    color: #bbb;
+    color: #484544;
     font-size: 25px;
     font-weight: 450;
 
     &:hover {
-      color: #2dca98;
+      color: #134578;
       font-family: "Poppins", sans-serif;
       font-weight: 500;
       
@@ -25,13 +27,14 @@ const Styles = styled.div`
 
   }
    .navbar-brand, .navbar-nav  {
-    color: #bbb;
+    color: #484544;
     font-size: 35px;
     font-weight:800;
+    
 
 
     &:hover {
-      color: #2dca98;
+      color: #134578;
       font-family: "Poppins", sans-serif;
       font-weight: 800;
       
@@ -40,14 +43,17 @@ const Styles = styled.div`
     .navbar-toggle, .navbar-collapse{
       color:#2dca98;
     }
-  }
+  
   
 `;
 
 export const NavigationBar = () => (
+    
     <Styles>
+       
         <Navbar expand="lg">
-            {/* <Navbar.Brand href="/">
+           
+            <Navbar.Brand href="/">
                 <img
                     src={fiveothreelogo}
                     width="95"
@@ -55,7 +61,7 @@ export const NavigationBar = () => (
                     className="d-inline-block align-top"
                     alt=""
                 />
-            </Navbar.Brand> */}
+            </Navbar.Brand>
             <Navbar.Brand href="/">503 Development CO</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">

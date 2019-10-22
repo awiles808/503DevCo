@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-export const Projects = () => (
-    <div>
-        <p>Project Pat</p>
-    </div>
 
-)
+export const Projects = () => {
+    return (
+   
+    
+                <div class="powr-media-gallery" id="fba44dc4_1534873301"></div>
+   
+
+    )
+        }

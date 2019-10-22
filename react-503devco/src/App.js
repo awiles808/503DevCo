@@ -5,9 +5,13 @@ import { Projects } from './Projects';
 import { Team } from './Team';
 import { Contact } from './Contact';
 import { NotFound404 } from './NotFound404';
-import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
-import { Jumbotron } from './components/Jumbotron'
+import { Jumbotron } from './components/Jumbotron';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { fab } from '@fortawesome/free-brands-svg-icons'
+
+
+library.add(fab)
 
 class App extends Component {
   render() {
@@ -16,7 +20,7 @@ class App extends Component {
         <Router>
           <NavigationBar />
           <Jumbotron />
-          <Layout>
+          
             <Switch>
               <Route exact path="/" component={About} />
               <Route path="/projects" component={Projects} />
@@ -24,7 +28,7 @@ class App extends Component {
               <Route path="/contact" component={Contact} />
               <Route component={NotFound404} />
             </Switch>
-          </Layout>
+        
         </Router>
       </React.Fragment>
     );
