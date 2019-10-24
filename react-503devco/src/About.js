@@ -4,19 +4,21 @@ import Container from 'react-bootstrap/Container';
 
 const Styles = styled.div`
 #call-to-action {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) fixed center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) fixed center center;
   background-size: cover;
-  padding: 80px 0;
+  padding: 90px 0;
 }
 
 #call-to-action .cta-title {
   color: #fff;
   font-size: 28px;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 #call-to-action .cta-text {
   color: #fff;
+  font-size: 18px;
+  font-weight: 450;
 }
 
 @media (min-width: 769px) {
@@ -46,7 +48,13 @@ const Styles = styled.div`
   background: #134578;
   border: 2px solid #134578;
 }
+  #call-to-action .cta-text:hover {
+  color: #FFD700;
   
+}
+#call-to-action .cta-title:hover {
+  color: #FFD700;
+}
   
 `;
 

@@ -62,7 +62,7 @@ export const NavigationBar = () => (
                     alt=""
                 />
             </Navbar.Brand>
-            <Navbar.Brand href="/">503 Development CO</Navbar.Brand>
+            <Navbar.Brand href="/">503 Development Co.</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
