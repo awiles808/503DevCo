@@ -10,7 +10,7 @@ const Styles = styled.div`
     background: url(${carbon}) no-repeat fixed bottom;
     background-size: cover;
     color: #efefef;
-    height: 450px;
+    height: 375px;
     position: relative;
     z-index: -2;
   }
@@ -31,7 +31,6 @@ export const Jumbotron = () => (
         <Jumbo fluid className="jumbo">
             <div className="overlay"></div>
             <Container>
-                
             </Container>
         </Jumbo>
     </Styles>

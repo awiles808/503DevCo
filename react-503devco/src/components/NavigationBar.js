@@ -43,7 +43,7 @@ const Styles = styled.div`
     .navbar-toggle, .navbar-collapse{
       color:#2dca98;
     }
-  
+   }
   
 `;
 
@@ -52,7 +52,7 @@ export const NavigationBar = () => (
     <Styles>
        
         <Navbar expand="lg">
-           
+       
             <Navbar.Brand href="/">
                 <img
                     src={fiveothreelogo}
@@ -63,6 +63,7 @@ export const NavigationBar = () => (
                 />
             </Navbar.Brand>
             <Navbar.Brand href="/">503 Development Co.</Navbar.Brand>
+            
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">

@@ -4,6 +4,7 @@ import { About } from './About';
 import { Projects } from './Projects';
 import { Team } from './Team';
 import { Contact } from './Contact';
+// import {Commercial} from './Commercial'
 import { NotFound404 } from './NotFound404';
 import { NavigationBar } from './components/NavigationBar';
 import { Jumbotron } from './components/Jumbotron';

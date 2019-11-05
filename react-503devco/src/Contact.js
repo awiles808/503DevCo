@@ -91,8 +91,8 @@ export const Contact = () => {
                         <div class="row">
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                                 <div class="box">
-                                    <div class="icon"><a href="contact"><i class="fa fa-home"></i></a></div>
-                                    <h4 class="title"><a href="contact">Sell Your Home</a></h4>
+                    <div class="icon"><a href="http://google.com"><i class="fa fa-home"></i></a></div>
+                    <h4 class="title"><a href="http://google.com">Sell Your Home</a></h4>
                                     <p class="description">Sell Your Home Fast and in "As Is" Condition
               Follow the home selling steps below and sell to 503 Development Co. today!</p>
                                 </div>
