@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import styled from 'styled-components';
 import fiveothreelogo from '../assets/fiveothreelogo.png'
 
@@ -12,7 +12,7 @@ const Styles = styled.div`
   }
  
  
-  a, .nav-link{
+  a, .nav-link, .dropdown-toggle, .nav-Item {
     color: #484544;
     font-size: 25px;
     font-weight: 450;
@@ -44,6 +44,13 @@ const Styles = styled.div`
       color:#2dca98;
     }
    }
+   .navDropdown, .navDropdown.Item {
+    color: #484544;
+    font-size: 25px;
+    font-weight: 450;
+
+
+   }
   
 `;
 
@@ -63,13 +70,18 @@ export const NavigationBar = () => (
                 />
             </Navbar.Brand>
             <Navbar.Brand href="/">503 Development Co.</Navbar.Brand>
-            
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="ml-auto">
                     <Nav.Item>
                         <Nav.Link>
-                            <Link to="/">About</Link>
+                            {/* <Link to="/">About</Link> */}
+                            <NavDropdown title="About" id="basic-nav-dropdown">
+                                <NavDropdown.Item href="contact">Beginnings</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.2">Where We Are</NavDropdown.Item>
+                                <NavDropdown.Item href="#action/3.3">Where We Are Headed</NavDropdown.Item>
+
+                            </NavDropdown>
                         </Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
@@ -87,8 +99,13 @@ export const NavigationBar = () => (
                             <Link to="/contact">Contact</Link>
                         </Nav.Link>
                     </Nav.Item>
+                    <Nav.Item>
+                        <Nav.Link>
+                            <Link to="/testimonials">Testimonials</Link>
+                        </Nav.Link>
+                    </Nav.Item>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
-    </Styles >
+    </Styles>
 )
