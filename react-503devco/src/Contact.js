@@ -79,7 +79,6 @@ const Styles = styled.div`
 
 
 
-
 export const Contact = () => {
     return (
         <Styles>
