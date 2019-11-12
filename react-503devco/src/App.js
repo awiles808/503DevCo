@@ -7,7 +7,7 @@ import { Contact } from './Contact';
 import { Testimonials } from './Testimonials';
 import { NotFound404 } from './NotFound404';
 import { NavigationBar } from './components/NavigationBar';
-import { Jumbotron } from './components/Jumbotron';
+// import { Jumbotron } from './components/Jumbotron';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
@@ -20,7 +20,7 @@ class App extends Component {
       <React.Fragment>
         <Router>
           <NavigationBar />
-          <Jumbotron />
+          {/* <Jumbotron /> */}
           
             <Switch>
               <Route exact path="/" component={About} />

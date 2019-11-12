@@ -1,8 +1,30 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
+import { Jumbotron as Jumbo } from 'react-bootstrap';
+import carbon from './assets/CarbonadoNew.png'
 
-const Styles = styled.div`
+const Styles = styled.div` 
+ .jumbo {
+    background: url(${carbon}) no-repeat fixed bottom;
+    background-size: cover;
+    color: #efefef;
+    height: 375px;
+    position: relative;
+    z-index: -2;
+  }
+  .overlay {
+    background-color: #000;
+    opacity: 0.4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+  }
+
+
 #call-to-action {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://images.pexels.com/photos/4827/nature-forest-trees-fog.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260) fixed center center;
   background-size: cover;
@@ -60,7 +82,10 @@ const Styles = styled.div`
 
 export const About = () => (
         <Styles>
-        
+    <Jumbo fluid className="jumbo">
+      <div className="overlay"></div>
+
+    </Jumbo>
                 <div>
                 <Container>
         <h2>All About 503</h2>
