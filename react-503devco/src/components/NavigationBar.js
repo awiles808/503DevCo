@@ -1,5 +1,5 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown, Button} from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Button, Dropdown} from 'react-bootstrap';
 import styled from 'styled-components';
 import fiveothreelogo from '../assets/fiveothreelogo.png';
 import { LinkContainer } from 'react-router-bootstrap'
@@ -18,7 +18,7 @@ const Styles = styled.div`
 }
  
  
-  a, .dropdown-toggle {
+  a,  .dropdown-toggle {
     color: #484544;
     font-size: 25px;
     font-weight: 450;
@@ -74,46 +74,58 @@ export const NavigationBar = () => (
                 <Nav className="ml-auto">
                 
                     <Nav.Item>
+                    <Dropdown>
                             <NavDropdown title="About" id="basic-nav-dropdown">
                                 <LinkContainer to="/">
-                                <Button>Beginings</Button></LinkContainer>
+                                <Button>Bottom</Button></LinkContainer>
                             <LinkContainer to="/">
-                                <Button>Beginings</Button></LinkContainer>
+                                <Button>Now We</Button></LinkContainer>
                                 <LinkContainer to="/">
-                                <Button>Beginings</Button></LinkContainer>
+                                <Button>Hea</Button></LinkContainer>
                             </NavDropdown>
+                        </Dropdown>
                     </Nav.Item>
 
                     <Nav.Item>
                         <NavDropdown title="Projects" id="basic-nav-dropdown">
+                            <LinkContainer to="NewBuilds">
+                                <Button>New Builds</Button></LinkContainer>
+                            <LinkContainer to="AduBuilds">
+                                <Button>ADU Builds</Button></LinkContainer>
+                            <LinkContainer to="Flips">
+                                <Button>Flips</Button></LinkContainer>
                             <LinkContainer to="Projects">
-                            <Button>Beginings</Button></LinkContainer>
-                            <NavDropdown.Item href="#action/3.2">Where We Are</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Where We Are Headed</NavDropdown.Item>
+                                <Button>All Projects</Button></LinkContainer>
                         </NavDropdown>
                     </Nav.Item>
                     <Nav.Item>
                         <NavDropdown title="Team" id="basic-nav-dropdown">
                             <LinkContainer to="Team">
-                                <Button>Beginings</Button></LinkContainer>
-                            <NavDropdown.Item href="#action/3.2">Where We Are</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Where We Are Headed</NavDropdown.Item>
+                                <Button>Mike</Button></LinkContainer>
+                            <LinkContainer to="/">
+                                <Button>Kami</Button></LinkContainer>
+                            <LinkContainer to="/">
+                                <Button>Jimmy</Button></LinkContainer>
                         </NavDropdown>
                     </Nav.Item>
                     <Nav.Item>
                         <NavDropdown title="Contact" id="basic-nav-dropdown">
                             <LinkContainer to="Contact">
-                                <Button>Beginings</Button></LinkContainer>
-                            <NavDropdown.Item href="#action/3.2">Where We Are</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Where We Are Headed</NavDropdown.Item>
+                                <Button>Call Us</Button></LinkContainer>
+                            <LinkContainer to="/">
+                                <Button>Sell Your Home</Button></LinkContainer>
+                            <LinkContainer to="/">
+                                <Button>Buy From Us</Button></LinkContainer>
                         </NavDropdown>
                     </Nav.Item>
                     <Nav.Item>
                         <NavDropdown title="Testimonials" id="basic-nav-dropdown">
                             <LinkContainer to="Testimonials">
-                                <Button>Beginings</Button></LinkContainer>
-                            <NavDropdown.Item href="#action/3.2">Where We Are</NavDropdown.Item>
-                            <NavDropdown.Item href="#action/3.3">Where We Are Headed</NavDropdown.Item>
+                                <Button>New Builds</Button></LinkContainer>
+                            <LinkContainer to="/">
+                                <Button>Selling Your Home</Button></LinkContainer>
+                            <LinkContainer to="/">
+                                <Button>Projects</Button></LinkContainer>
                         </NavDropdown>
                     </Nav.Item>
                 </Nav>

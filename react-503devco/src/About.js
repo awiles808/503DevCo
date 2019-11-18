@@ -70,14 +70,7 @@ const Styles = styled.div`
   background: #134578;
   border: 2px solid #134578;
 }
-  #call-to-action .cta-text:hover {
-  color: #FFD700;
-  
-}
-#call-to-action .cta-title:hover {
-  color: #FFD700;
-}
-  
+ 
 `;
 
 export const About = () => (
