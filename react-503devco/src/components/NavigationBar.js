@@ -1,6 +1,7 @@
 import React from 'react';
 import { Nav, Navbar, NavDropdown, Button, Dropdown} from 'react-bootstrap';
 import styled from 'styled-components';
+import Headroom from 'react-headroom';
 import fiveothreelogo from '../assets/fiveothreelogo.png';
 import { LinkContainer } from 'react-router-bootstrap'
 
@@ -55,7 +56,7 @@ export const NavigationBar = () => (
     
     
     <Styles>
-
+        <Headroom>
         <Navbar expand="lg">
        
             <Navbar.Brand href="/">
@@ -95,7 +96,7 @@ export const NavigationBar = () => (
                             <LinkContainer to="Flips">
                                 <Button>Flips</Button></LinkContainer>
                             <LinkContainer to="Projects">
-                                <Button>All Projects</Button></LinkContainer>
+                                <Button>Recent Projects</Button></LinkContainer>
                         </NavDropdown>
                     </Nav.Item>
                     <Nav.Item>
@@ -131,5 +132,6 @@ export const NavigationBar = () => (
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
+        </Headroom>
     </Styles>
 )
