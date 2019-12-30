@@ -5,25 +5,29 @@ import Container from 'react-bootstrap/Container';
 
 const IMAGES =
 [{
-    src: "https://i.imgur.com/LKrq1Sh.jpg",
+    src: "https://i.imgur.com/d19WA3c.jpg",
     thumbnail: "https://i.imgur.com/d19WA3c.jpg",
-        thumbnailWidth: 320,
+        thumbnailWidth: 360,
         thumbnailHeight: 174,
-        caption: "After Rain (Jeshu John - designerspics.com)"
+        caption: "After Rain (Jeshu John - designerspics.com)",
+    thumbnailCaption: "Historic Irvington",
+    
+        
 },
-        { src: "https://i.imgur.com/LrLG0Yy.jpg"},
+        // { src: "https://i.imgur.com/LrLG0Yy.jpg"},
         { src: "https://i.imgur.com/9zBvXjN.jpg" },
 {
-    src: "https://i.imgur.com/EQwJiXx.jpg",
+    src: "https://i.imgur.com/LfchCbx.jpg",
     thumbnail: "https://i.imgur.com/LfchCbx.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212,
-        tags: [{value: "New Build", title: "New Homes"}, {value: "Homes", title: "Homes"}],
-        caption: "New Build (503 Development - 503cash.com)"
+    caption: "Completely renovated charmer in historic Irvington. Tons of character yet ready for modern living. No stone left unturned. Custom kitchen and baths. New hardwoods and carpet throughout. Brand new electrical, plumbing, heating/cooling, sewer line, water heater, and all new stainless appliances. Inviting master bedroom with brand new bathroom",
+        thumbnailCaption:"Completely renovated ",
 },
+        { src: "https://i.imgur.com/EQwJiXx.jpg" },
         {src: "https://i.imgur.com/d4OJBdo.jpg"},
 {
-    src: "https://i.imgur.com/rwAyBU8.jpg",
+    src: "https://i.imgur.com/03mgX9R.jpg",
     thumbnail: "https://i.imgur.com/03mgX9R.jpg",
         thumbnailWidth: 320,
         thumbnailHeight: 212

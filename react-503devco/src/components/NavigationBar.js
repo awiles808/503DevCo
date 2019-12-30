@@ -3,7 +3,9 @@ import { Nav, Navbar, NavDropdown, Button, Dropdown} from 'react-bootstrap';
 import styled from 'styled-components';
 import Headroom from 'react-headroom';
 import fiveothreelogo from '../assets/fiveothreelogo.png';
-import { LinkContainer } from 'react-router-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 
 const Styles = styled.div`
@@ -16,6 +18,7 @@ const Styles = styled.div`
   }
   .dropdown:hover .dropdown-menu {
     display: block;
+    
 }
  
  
@@ -46,6 +49,8 @@ const Styles = styled.div`
     }
     
    }
+ 
+ 
   
 .dropdown-toggle::after {
     display:none;
@@ -58,7 +63,7 @@ export const NavigationBar = () => (
     <Styles>
         <Headroom>
         <Navbar expand="lg">
-       
+       {/* Centering the contents  */}
             <Navbar.Brand href="/">
                 <img
                     src={fiveothreelogo}
@@ -75,28 +80,26 @@ export const NavigationBar = () => (
                 <Nav className="ml-auto">
                 
                     <Nav.Item>
-                    <Dropdown>
                             <NavDropdown title="About" id="basic-nav-dropdown">
-                                <LinkContainer to="/">
-                                <Button>Bottom</Button></LinkContainer>
+                                    <Link to="/">
+                                <Button>Bottom</Button></Link>
                             <LinkContainer to="/">
                                 <Button>Now We</Button></LinkContainer>
                                 <LinkContainer to="/">
                                 <Button>Hea</Button></LinkContainer>
                             </NavDropdown>
-                        </Dropdown>
                     </Nav.Item>
 
                     <Nav.Item>
                         <NavDropdown title="Projects" id="basic-nav-dropdown">
-                            <LinkContainer to="NewBuilds">
-                                <Button>New Builds</Button></LinkContainer>
+                            <LinkContainer to="Restorations">
+                                <Button>Restorations</Button></LinkContainer>
                             <LinkContainer to="AduBuilds">
                                 <Button>ADU Builds</Button></LinkContainer>
-                            <LinkContainer to="Flips">
-                                <Button>Flips</Button></LinkContainer>
+                            <LinkContainer to="Testimonials">
+                                <Button>New Builds</Button></LinkContainer>
                             <LinkContainer to="Projects">
-                                <Button>Recent Projects</Button></LinkContainer>
+                                <Button>Recent</Button></LinkContainer>
                         </NavDropdown>
                     </Nav.Item>
                     <Nav.Item>
@@ -121,13 +124,9 @@ export const NavigationBar = () => (
                     </Nav.Item>
                     <Nav.Item>
                         <NavDropdown title="Testimonials" id="basic-nav-dropdown">
-                            <LinkContainer to="Testimonials">
-                                <Button>New Builds</Button></LinkContainer>
-                            <LinkContainer to="/">
-                                <Button>Selling Your Home</Button></LinkContainer>
-                            <LinkContainer to="/">
-                                <Button>Projects</Button></LinkContainer>
-                        </NavDropdown>
+                            <LinkContainer to="/Testimonials">
+                                    <Button>Testimonials</Button></LinkContainer>
+                            </NavDropdown>
                     </Nav.Item>
                 </Nav>
             </Navbar.Collapse>

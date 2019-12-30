@@ -1,70 +1,54 @@
+
 import React from 'react';
-import { Container } from 'react-bootstrap';
-// import { Jumbotron as Jumbo } from 'react-bootstrap';
+import {
+    Card, Button, CardImg, CardTitle, CardText, CardColumns, Container,
+    CardSubtitle, CardBody, Toast
+} from 'reactstrap';
+import { Link } from 'react-router-dom';
 
 
 
 
-export const Testimonials = () => (
- 
-    <Container>
-  
-      
-        <section class="team-section text-center my-5">
 
-
-            <h2 class="h1-responsive font-weight-bold my-5">Testimonials</h2>
-
-            <p class="dark-grey-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam
-    eum porro a pariatur veniam.</p>
-
-
-            <div class="row text-center">
-
-                <div class="col-md-4 mb-md-0 mb-5">
-
-                    <div class="testimonial">
-
-
-
-                        <h4 class="font-weight-bold dark-grey-text mt-4">Anna Deynah</h4>
-                        <h6 class="font-weight-bold blue-text my-3">Web Designer</h6>
-                        <p class="font-weight-normal dark-grey-text">
-                            <i class="fas fa-quote-left pr-2"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-          eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.</p>
-
-
-                    </div>
-
-                </div>
-
-                </div>
-
-            <div class="col-md-4 mb-md-0 mb-5">
-
-                <div class="testimonial">
-
-                    
-
-                        <h4 class="font-weight-bold dark-grey-text mt-4">John Doe</h4>
-                        <h6 class="font-weight-bold blue-text my-3">Web Developer</h6>
-                        <p class="font-weight-normal dark-grey-text">
-                            <i class="fas fa-quote-left pr-2"></i>Ut enim ad minima veniam, quis nostrum exercitationem ullam
-          corporis suscipit laboriosam, nisi ut aliquid commodi.</p>
-
-                    </div>
-
-                </div>
+export const Testimonials = ( ) => {
+    return (
+        
+        <Container>
+       
+        <CardColumns>
                 
-                
+            <Card><Link to ='/House1'>
+                <CardImg top width="100%" src="https://i.imgur.com/03mgX9R.jpg" alt="Card image cap" /> </Link>
+                <CardBody>
+                    <CardTitle>11425 SW 14th St.</CardTitle>
+                    <CardSubtitle></CardSubtitle>
+                    <CardText>Completely renovated, contemporary 3bed/2bath home with open floor plan on large level lot. No stone left unturned. Custom kitchen and baths, granite counters and modern touches. New hardwoods and carpet throughout. Brand new roof, electrical, plumbing, furnace, water heater, and all new stainless appliances. All new fixtures throughout. Conveniently located near downtown Beaverton.</CardText>
+                    {/* <Button>Button</Button> */}
+                        <Toast>Heloo</Toast>
+                </CardBody>
+               
+            </Card>
+            <Card><Link to ='/House2'>
+                <CardImg top width="100%" src="https://i.imgur.com/d19WA3c.jpg" alt="Card image cap" /></Link>
+                <CardBody>
+                    <CardTitle>11425 SW 14th St.</CardTitle>
+                    <CardSubtitle>Card subtitle</CardSubtitle>
+                    <CardText>TCompletely renovated, contemporary 3bed/2bath home with open floor plan on large level lot. No stone left unturned. Custom kitchen and baths, granite counters and modern touches. New hardwoods and carpet throughout. Brand new roof, electrical, plumbing, furnace, water heater, and all new stainless appliances. All new fixtures throughout. Conveniently located near downtown Beaverton.</CardText>
+                    {/* <Button>Button</Button> */}
+                </CardBody>
+            </Card>
+            <Card>
+                <CardImg top width="100%" src= "https://i.imgur.com/LfchCbx.jpg" alt="Card image cap" />
+                <CardBody>
+                    <CardTitle>Card title</CardTitle>
+                    <CardSubtitle>Card subtitle</CardSubtitle>
+                    <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
+                    <Button><Link to='/House1'>Button</Link></Button>
+                </CardBody>
+            </Card>
+        </CardColumns>
+        </Container>
+    );
+};
 
-
-</section>
-
-      
-    </Container>
-    
-    
-)
 
