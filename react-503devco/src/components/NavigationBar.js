@@ -1,10 +1,12 @@
 import React from 'react';
-import { Nav, Navbar, NavDropdown, Button, Dropdown} from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown,  } from 'react-bootstrap';
 import styled from 'styled-components';
 import Headroom from 'react-headroom';
 import fiveothreelogo from '../assets/fiveothreelogo.png';
-import { LinkContainer } from 'react-router-bootstrap';
-import { Link } from 'react-router-dom';
+// import { LinkContainer } from 'react-router-bootstrap';
+// import { Link } from 'react-router-dom';
+// import { NavLink } from 'reactstrap';
+
 
 
 
@@ -77,55 +79,50 @@ export const NavigationBar = () => (
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 
-                <Nav className="ml-auto">
-                
+                <Nav  className="ml-auto">
+                        
                     <Nav.Item>
-                            <NavDropdown title="About" id="basic-nav-dropdown">
-                                    <Link to="/">
-                                <Button>Bottom</Button></Link>
-                            <LinkContainer to="/">
-                                <Button>Now We</Button></LinkContainer>
-                                <LinkContainer to="/">
-                                <Button>Hea</Button></LinkContainer>
-                            </NavDropdown>
+                        <Nav.Link href="/">Home</Nav.Link>
                     </Nav.Item>
 
+
+                <NavDropdown href="Restorations" title="Projects" id="basic-nav-dropdown">
                     <Nav.Item>
-                        <NavDropdown title="Projects" id="basic-nav-dropdown">
-                            <LinkContainer to="Restorations">
-                                <Button>Restorations</Button></LinkContainer>
-                            <LinkContainer to="AduBuilds">
-                                <Button>ADU Builds</Button></LinkContainer>
-                            <LinkContainer to="Testimonials">
-                                <Button>New Builds</Button></LinkContainer>
-                            <LinkContainer to="Projects">
-                                <Button>Recent</Button></LinkContainer>
-                        </NavDropdown>
-                    </Nav.Item>
+                        <Nav.Link href="Restorations">Restorations</Nav.Link>
+                </Nav.Item>
+
                     <Nav.Item>
+                        <Nav.Link href="AduBuilds">ADU Builds</Nav.Link>
+                 </Nav.Item>
+                </NavDropdown>
+                    
+                
+                    <Nav.Item >
                         <NavDropdown title="Team" id="basic-nav-dropdown">
-                            <LinkContainer to="Team">
-                                <Button>Mike</Button></LinkContainer>
-                            <LinkContainer to="/">
-                                <Button>Kami</Button></LinkContainer>
-                            <LinkContainer to="/">
-                                <Button>Jimmy</Button></LinkContainer>
+                                <Nav.Item>
+                                    <Nav.Link href="Team">Team</Nav.Link>
+                                </Nav.Item>
                         </NavDropdown>
                     </Nav.Item>
+                      
                     <Nav.Item>
                         <NavDropdown title="Contact" id="basic-nav-dropdown">
-                            <LinkContainer to="Contact">
-                                <Button>Call Us</Button></LinkContainer>
-                            <LinkContainer to="/">
-                                <Button>Sell Your Home</Button></LinkContainer>
-                            <LinkContainer to="/">
-                                <Button>Buy From Us</Button></LinkContainer>
+                                <Nav.Item>
+                                    <Nav.Link href="Contact">Sell</Nav.Link>
+                        </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link href="Team">Buy</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link href="https://www.503cash.com/" target="_blank" >Process</Nav.Link>
+                                </Nav.Item>
                         </NavDropdown>
                     </Nav.Item>
                     <Nav.Item>
                         <NavDropdown title="Testimonials" id="basic-nav-dropdown">
-                            <LinkContainer to="/Testimonials">
-                                    <Button>Testimonials</Button></LinkContainer>
+                                <Nav.Item>
+                                    <Nav.Link href="Testimonials">Testimonials</Nav.Link>
+                                </Nav.Item>
                             </NavDropdown>
                     </Nav.Item>
                 </Nav>

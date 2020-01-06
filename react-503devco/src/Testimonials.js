@@ -1,10 +1,11 @@
 
 import React from 'react';
 import {
-    Card, Button, CardImg, CardTitle, CardText, CardColumns, Container,
-    CardSubtitle, CardBody, Toast
+    Card, Button, CardTitle, CardText, CardColumns, Container,
+    CardFooter,  CardBody, CardHeader, 
 } from 'reactstrap';
-import { Link } from 'react-router-dom';
+
+
 
 
 
@@ -17,35 +18,80 @@ export const Testimonials = ( ) => {
        
         <CardColumns>
                 
-            <Card><Link to ='/House1'>
-                <CardImg top width="100%" src="https://i.imgur.com/03mgX9R.jpg" alt="Card image cap" /> </Link>
-                <CardBody>
-                    <CardTitle>11425 SW 14th St.</CardTitle>
-                    <CardSubtitle></CardSubtitle>
-                    <CardText>Completely renovated, contemporary 3bed/2bath home with open floor plan on large level lot. No stone left unturned. Custom kitchen and baths, granite counters and modern touches. New hardwoods and carpet throughout. Brand new roof, electrical, plumbing, furnace, water heater, and all new stainless appliances. All new fixtures throughout. Conveniently located near downtown Beaverton.</CardText>
-                    {/* <Button>Button</Button> */}
-                        <Toast>Heloo</Toast>
-                </CardBody>
-               
-            </Card>
-            <Card><Link to ='/House2'>
-                <CardImg top width="100%" src="https://i.imgur.com/d19WA3c.jpg" alt="Card image cap" /></Link>
-                <CardBody>
-                    <CardTitle>11425 SW 14th St.</CardTitle>
-                    <CardSubtitle>Card subtitle</CardSubtitle>
-                    <CardText>TCompletely renovated, contemporary 3bed/2bath home with open floor plan on large level lot. No stone left unturned. Custom kitchen and baths, granite counters and modern touches. New hardwoods and carpet throughout. Brand new roof, electrical, plumbing, furnace, water heater, and all new stainless appliances. All new fixtures throughout. Conveniently located near downtown Beaverton.</CardText>
-                    {/* <Button>Button</Button> */}
-                </CardBody>
-            </Card>
-            <Card>
-                <CardImg top width="100%" src= "https://i.imgur.com/LfchCbx.jpg" alt="Card image cap" />
-                <CardBody>
-                    <CardTitle>Card title</CardTitle>
-                    <CardSubtitle>Card subtitle</CardSubtitle>
-                    <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-                    <Button><Link to='/House1'>Button</Link></Button>
-                </CardBody>
-            </Card>
+                <Card>
+                    <CardHeader tag="h3">Featured</CardHeader>
+                    <CardBody>
+                        <CardTitle>Special Title Treatment</CardTitle>
+                        <CardText>air plant etsy +1 artisan. Woke tilde tbh, poutine authentic hella tumblr microdosing. Poutine  pok pok deep v yr vexillologist venmo. Everyday carry brooklyn cornhole, sartorial microdosing activated charcoal adaptogen prism jianbing unicorn.
+I bet you’re still using Bootstrap toocontent.</CardText>
+                        <Button outline color="secondary"><a href='/Carousel'> All Projects</a></Button>
+                    </CardBody>
+                    <CardFooter className="text-muted">Footer</CardFooter>
+                </Card>
+                <Card>
+                    <CardHeader tag="h3">Featured</CardHeader>
+                    <CardBody>
+                        <CardTitle>Special Title Treatment</CardTitle>
+                        <CardText>
+
+Hot chicken  coffee helvetica, drinking vinegar Venmo subway tile heirloom,lo-fi XOXO tofu asymmetrical roof party tote bag ennui. Intelligentsia occupy af VHS vexillologist quinoa schlitz, humblebrag iceland vice lumbersexual. Cred organic microdosing cliche bushwick bitters bicycle rights everyday carry street art 8-bit keytar pork belly hammock echo park.
+
+Green .</CardText>
+                        <Button>Go somewhere</Button>
+                    </CardBody>
+                    <CardFooter className="text-muted">Footer</CardFooter>
+                </Card>
+                <Card>
+                    <CardHeader tag="h3">Featured</CardHeader>
+                    <CardBody>
+                        <CardTitle>Special Title Treatment</CardTitle>
+                        <CardText>poutine authentic hella tumblr microdosingWoke tilde tbh, poutine authentic hella tumblr microdosingWoke tilde tbh, poutine authentic hella tumblr microdosing</CardText>
+                        <Button>Go somewhere</Button>
+                    </CardBody>
+                    <CardFooter className="text-muted">Footer</CardFooter>
+                </Card>
+                <Card>
+                    <CardHeader tag="h3">Featured</CardHeader>
+                    <CardBody>
+                        <CardTitle>Special Title Treatment</CardTitle>
+                        <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
+                        <Button>Go somewhere</Button>
+                    </CardBody>
+                    <CardFooter className="text-muted">Footer</CardFooter>
+                </Card>
+  
+                <Card>
+                    <CardHeader tag="h3">Featured</CardHeader>
+                    <CardBody>
+                        <CardTitle>Special Title Treatment</CardTitle>
+                        <CardText>air plant etsy +1 artisan. Woke tilde tbh, poutine authentic hella tumblr microdosing. Poutine  pok pok deep v yr vexillologist venmo. Everyday carry brooklyn cornhole, sartorial microdosing activated charcoal adaptogen prism jianbing unicorn.
+I bet you’re still using Bootstrap toocontent.</CardText>
+                        <Button>Go somewhere</Button>
+                    </CardBody>
+                    <CardFooter className="text-muted">Footer</CardFooter>
+                </Card>
+                <Card>
+                    <CardHeader tag="h3">Featured</CardHeader>
+                    <CardBody>
+                        <CardTitle>Special Title Treatment</CardTitle>
+                        <CardText>air plant etsy +1 artisan. Woke tilde tbh, poutine authentic hella tumblr microdosing. Poutine  pok pok deep v yr vexillologist venmo. Everyday carry brooklyn cornhole, sartorial microdosing activated charcoal adaptogen prism jianbing unicorn.
+I bet you’re still using Bootstrap toocontent.</CardText>
+                        <Button>Go somewhere</Button>
+                    </CardBody>
+                    <CardFooter className="text-muted">Footer</CardFooter>
+                </Card>
+
+                <Card>
+                    <CardHeader tag="h3">Featured</CardHeader>
+                    <CardBody>
+                        <CardTitle>Special Title Treatment</CardTitle>
+                        <CardText>air plant etsy +1 artisan. Woke tilde tbh, poutine authentic hella tumblr microdosing. Poutine  pok pok deep v yr vexillologist venmo. Everyday carry brooklyn cornhole, sartorial microdosing activated charcoal adaptogen prism jianbing unicorn.
+I bet you’re still using Bootstrap toocontent.</CardText>
+                        <Button>Go somewhere</Button>
+                    </CardBody>
+                    <CardFooter className="text-muted">Footer</CardFooter>
+                </Card>
+          
         </CardColumns>
         </Container>
     );

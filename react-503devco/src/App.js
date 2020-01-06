@@ -13,10 +13,12 @@ import { Restorations} from './components/Restorations';
 import { House1 } from './components/House1';
 import { House2 } from './components/House2';
 import { House3 } from './components/House3';
+import { ProgressBar } from './components/ProgressBar';
 // import { Jumbotron } from './components/Jumbotron';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import SimpleReactLightbox from 'simple-react-lightbox';
+
 
 
 library.add(fab)
@@ -45,6 +47,7 @@ class App extends Component {
               <Route path='/house1' component={House1}/>
               <Route path='/house2' component={House2}/>
               <Route path='/house3' component={House3}/>
+              <Route path='/progressbar' component={ProgressBar}/>
               <Route component={NotFound404} />
               
             </Switch>

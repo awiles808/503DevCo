@@ -20,7 +20,7 @@ export const Restorations = () => {
                         <CardTitle>11425 SW 14th St.</CardTitle>
                         <CardSubtitle></CardSubtitle>
                         <CardText>Completely renovated, contemporary 3bed/2bath home with open floor plan on large level lot. No stone left unturned. Custom kitchen and baths, granite counters and modern touches. New hardwoods and carpet throughout. Brand new roof, electrical, plumbing, furnace, water heater, and all new stainless appliances. All new fixtures throughout. Conveniently located near downtown Beaverton.</CardText>
-                        <Button><a href='/House1'>Full Gallery</a></Button>
+                        <Button outline color="secondary"><a href='/House1'>Full Gallery</a></Button>
                     </CardBody>
 
                 </Card>
@@ -39,7 +39,7 @@ export const Restorations = () => {
                         <CardTitle>Card title</CardTitle>
                         <CardSubtitle>Card subtitle</CardSubtitle>
                         <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-                        <Button><a href='/House3'>Full Gallery</a></Button>
+                        <Button outline color="secondary"><a href='/House3'>Full Gallery</a></Button>
                     </CardBody>
                 </Card>
                 <Card><Link to='/House1'>

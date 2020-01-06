@@ -2,12 +2,13 @@ import React from 'react';
 import { Jumbotron as Jumbo } from 'react-bootstrap';
 import styled from 'styled-components';
 // import trees from '../assets/trees.jpg';
-import carbon from '../assets/CarbonadoNew.png'
+// import carbon from '../assets/CarbonadoNew.png';
+import banner from '../assets/Banner.png'
 
 
 const Styles = styled.div`
   .jumbo {
-    background: url(${carbon}) no-repeat fixed bottom;
+    background: url(${banner}) no-repeat fixed bottom;
     background-size: cover;
     color: #efefef;
     height: 375px;

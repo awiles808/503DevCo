@@ -2,11 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import Container from 'react-bootstrap/Container';
 import { Jumbotron as Jumbo } from 'react-bootstrap';
-import carbon from './assets/CarbonadoNew.png'
+// import carbon from './assets/CarbonadoNew.png';
+import banner from './assets/Banner.png'
+
 
 const Styles = styled.div` 
  .jumbo {
-    background: url(${carbon}) no-repeat fixed bottom;
+    background: url(${banner}) no-repeat fixed bottom;
     background-size: cover;
     color: #efefef;
     height: 375px;
@@ -15,7 +17,7 @@ const Styles = styled.div`
   }
   .overlay {
     background-color: #000;
-    opacity: 0.4;
+    opacity: 0.2;
     position: absolute;
     top: 0;
     left: 0;
@@ -73,14 +75,17 @@ const Styles = styled.div`
  
 `;
 
-export const About = () => (
+
+export const About = () =>  (
         <Styles>
     <Jumbo fluid className="jumbo">
       <div className="overlay"></div>
-
+      
     </Jumbo>
                 <div>
                 <Container>
+                
+       
         <h2>All About 503</h2>
         
         <p>Lorem ipsum dolor amet marfa paleo pok pok intelligentsia disrupt. Pinterest microdosing keffiyeh, quinoa chicharrones skateboard shabby chic chillwave kale chips man braid. Stumptown migas mustache snackwave organic drinking vinegar artisan distillery. Occupy raclette tumeric drinking vinegar raw denim. Cred humblebrag lumbersexual mlkshk trust fund.
@@ -133,5 +138,6 @@ I bet you’re still using Bootstrap too…
 </Container>
 
 </Styles>
+
 
 )
