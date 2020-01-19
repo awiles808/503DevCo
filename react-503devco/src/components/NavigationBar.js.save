@@ -1,6 +1,6 @@
-import React  from 'react';
+yimport React, { useState } from 'react';
 import { Nav, Navbar, NavDropdown } from 'react-bootstrap';
-import { NavbarBrand } from 'reactstrap';
+import {NavbarToggler, Collapse} from 'reactstrap';
 import styled from 'styled-components';
 import Headroom from 'react-headroom';
 import fiveothreelogo from '../assets/fiveothreelogo.png';
@@ -74,29 +74,27 @@ const Styles = styled.div`
     }
    
    }
-   
  
  
   
 .dropdown-toggle::after {
     display:none;
-     
-    
 }
-
 `;
 
 
 export const NavigationBar = () => (
+    
+    const [isOpen, setIsOpen] = useState(false);
 
-   
-        
+const toggle = () => setIsOpen(!isOpen);
+    
     <Styles>
         <Headroom>
         <Navbar expand="lg">
                 
        {/* Centering the contents  */}
-            <NavbarBrand href="/">
+            <Navbar.Brand href="/">
                 <img
                     src={fiveothreelogo}
                     width="95"
@@ -104,10 +102,10 @@ export const NavigationBar = () => (
                     className="d-inline-block align-top"
                     alt=""
                 />
-            </NavbarBrand>
-            <NavbarBrand href="/">503 Development Co.</NavbarBrand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+            </Navbar.Brand>
+            <Navbar.Brand href="/">503 Development Co.</Navbar.Brand>
+                <NavbarToggler onClick={toggle} />
+                <Collapse isOpen={isOpen} navbar>
                 
                 <Nav  className="ml-auto">
                         
@@ -116,7 +114,7 @@ export const NavigationBar = () => (
                     </Nav.Item>
 
 
-                            <NavDropdown href='#' title="Projects" id="basic-nav-dropdown"> 
+                <NavDropdown href="Restorations" title="Projects" id="basic-nav-dropdown">
                     <Nav.Item>
                         <Nav.Link href="Restorations">Restorations</Nav.Link>
                 </Nav.Item>
@@ -156,9 +154,8 @@ export const NavigationBar = () => (
                             </NavDropdown> */}
                     </Nav.Item>
                 </Nav>
-            </Navbar.Collapse>
+            </Collapse>
         </Navbar>
         </Headroom>
     </Styles>
-    
 )

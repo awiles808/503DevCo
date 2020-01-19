@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     Card, Button, CardImg, CardTitle, CardText, CardColumns,
-    CardSubtitle, CardBody
+    CardSubtitle, CardBody, ButtonToggle
 } from 'reactstrap';
 import Container from 'react-bootstrap/Container';
 import { SRLWrapper } from 'simple-react-lightbox';
@@ -24,7 +24,7 @@ export const House2 = () => {
                             <CardTitle>11425 SW 14th St.</CardTitle>
                             <CardSubtitle></CardSubtitle>
                             <CardText>Completely renovated, contemporary 3bed/2bath home with open floor plan on large level lot. No stone left unturned. Custom kitchen and baths, granite counters and modern touches. New hardwoods and carpet throughout. Brand new roof, electrical, plumbing, furnace, water heater, and all new stainless appliances. All new fixtures throughout. Conveniently located near downtown Beaverton.</CardText>
-                            <Button outline color="secondary"><a href='/Restorations'> All Projects</a></Button>
+                            <ButtonToggle a href='/House1' color="secondary">All Projects</ButtonToggle>
                         </CardBody>
                     </Card>
 

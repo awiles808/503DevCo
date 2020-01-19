@@ -1,7 +1,7 @@
 import React from 'react';
 import {
-    Card, Button, CardImg, CardTitle, CardText, CardColumns, Container,
-    CardSubtitle, CardBody
+    Card, CardImg, CardTitle, CardText, CardColumns, Container,
+    CardSubtitle, CardBody, ButtonToggle
 } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
@@ -38,7 +38,7 @@ export const AduBuilds = () => {
                         <CardTitle>Card title</CardTitle>
                         <CardSubtitle>Card subtitle</CardSubtitle>
                         <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
-                        <Button><Link to='/House1'>Button</Link></Button>
+                        <ButtonToggle a href='/House1' color="secondary">Full Gallery</ButtonToggle>
                     </CardBody>
                 </Card>
             </CardColumns>

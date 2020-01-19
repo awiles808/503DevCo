@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import Button from 'react-bootstrap/Button'
+import ButtonToggle from 'react-bootstrap/Button'
 
 
 
@@ -77,6 +77,7 @@ const Styles = styled.div`
   line-height: 24px;
 }
 
+
 `;
 
 
@@ -104,7 +105,7 @@ export const Contact = () => {
                                     {/* <div class="icon"><a href="contact"><i class="fa fa-phone"></i></a></div> */}
                                     <h4 class="title"><a href="contact">Call Us</a></h4>
                                     <p class="description">Call our office at 503-927-4893 or send us your property information using our confidential Seller Questionnaire form on this website.</p>
-                    <Button><a href="http://503cash.com"> Call Us Today</a></Button>
+                    <ButtonToggle a href='wwww.503cash.com' color="success">Call Today</ButtonToggle> 
                                 </div>
                             </div>
                             <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.6s">
