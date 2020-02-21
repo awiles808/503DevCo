@@ -17,11 +17,16 @@ const Styles = styled.div`
   .navbar {
     background-color: #FFFFFF;
    
+   
     
     
   }
+
   .dropdown:hover .dropdown-menu {
+      
     display: block;
+    
+      
     
 }
 .homebtn.nav-link{
@@ -36,6 +41,7 @@ const Styles = styled.div`
          color: #484544;
     font-size: 25px;
     font-weight: 450;
+    padding:20px;
     
      &:hover {
       color: #134578;
@@ -50,6 +56,7 @@ const Styles = styled.div`
     color: #484544;
     font-size: 25px;
     font-weight: 450;
+    
 
 
     &:hover {
@@ -64,6 +71,7 @@ const Styles = styled.div`
     color: #484544;
     font-size: 35px;
     font-weight:900;
+    margin:5px;
     
     &:hover {
       color: #134578;
@@ -72,16 +80,18 @@ const Styles = styled.div`
       
       
     }
-   
+  
    }
    
- 
- 
   
 .dropdown-toggle::after {
     display:none;
      
     
+}
+
+.dropdown-nav-item{
+height:25px;
 }
 
 `;
@@ -93,7 +103,8 @@ export const NavigationBar = () => (
         
     <Styles>
         <Headroom>
-        <Navbar expand="lg">
+            <Navbar collapseOnSelect expand="lg">
+          
                 
        {/* Centering the contents  */}
             <NavbarBrand href="/">
@@ -116,19 +127,19 @@ export const NavigationBar = () => (
                     </Nav.Item>
 
 
-                            <NavDropdown href='#' title="Projects" id="basic-nav-dropdown"> 
-                    <Nav.Item>
+                        <NavDropdown  href='#' title="Projects" id="basic-nav-dropdown"> 
+                            <Nav.Item>
                         <Nav.Link href="Restorations">Restorations</Nav.Link>
                 </Nav.Item>
 
                     <Nav.Item>
-                        <Nav.Link href="AduBuilds">ADU Builds</Nav.Link>
+                        <Nav.Link href="AduBuilds">New Construction</Nav.Link>
                  </Nav.Item>
                 </NavDropdown>
                     
                 
                     <Nav.Item >
-                        <NavDropdown title="Team" id="basic-nav-dropdown">
+                        <NavDropdown  title="Team" id="basic-nav-dropdown">
                                 <Nav.Item>
                                     <Nav.Link href="Team">Team</Nav.Link>
                                 </Nav.Item>

@@ -13,7 +13,10 @@ import { Restorations} from './components/Restorations';
 import { House1 } from './components/House1';
 import { House2 } from './components/House2';
 import { House3 } from './components/House3';
-import { ProgressBar } from './components/ProgressBar';
+import { Oberlin } from './components/Oberlin';
+import { Alfred } from './components/Alfred';
+import { Pomona } from './components/Pomona';
+// import { ProgressBar } from './components/ProgressBar';
 // import { Jumbotron } from './components/Jumbotron';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons';
@@ -47,7 +50,10 @@ class App extends Component {
               <Route path='/house1' component={House1}/>
               <Route path='/house2' component={House2}/>
               <Route path='/house3' component={House3}/>
-              <Route path='/progressbar' component={ProgressBar}/>
+              <Route path ='/oberlin' component={Oberlin}/>
+              <Route path = '/alfred' component={Alfred}/>
+              <Route path = '/pomona' component={Pomona}/>
+              {/* <Route path='/progressbar' component={ProgressBar}/> */}
               <Route component={NotFound404} />
               
             </Switch>
