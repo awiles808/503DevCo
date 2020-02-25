@@ -21,13 +21,12 @@ export const Restorations = () => {
                     <CardBody>
                         <CardTitle>11425 SW 14th St.</CardTitle>
                         <CardSubtitle></CardSubtitle>
-                        <CardText>Completely renovated, contemporary 3bed/2bath home with open floor plan on large level lot. No stone left unturned. Custom kitchen and baths, granite counters and modern touches. New hardwoods and carpet throughout. Brand new roof, electrical, plumbing, furnace, water heater, and all new stainless appliances. All new fixtures throughout. Conveniently located near downtown Beaverton.</CardText>
-                       
+                        <CardText> floor plan on large level lot. No stone left unturned. Custom kitchen and baths, granite counters and modern touches. New hardwoods and carpet throughout. Brand new roof, electrical, plumbing, furnace, water heater, and all new stainless appliances. All new fixtures throughout. Conveniently located near downtown Beaverton.</CardText>
                     </CardBody>
 
                 </Card>
 
-                <Card><Link to='/House1'>
+                <Card><Link to='/SeFrancis'>
                     <CardImg top width="100%" src="https://i.imgur.com/03mgX9R.jpg" alt="Card image cap" /> </Link>
                     <CardBody>
                         <CardTitle>5830 SE Francis St.</CardTitle>
@@ -37,12 +36,12 @@ export const Restorations = () => {
                     </CardBody>
 
                 </Card>
-                <Card><Link to='/House2'>
+                <Card><Link to='/Sw14St11425'>
                     <CardImg top width="100%" src="https://i.imgur.com/d19WA3c.jpg" alt="Card image cap" /></Link>
                     <CardBody>
                         <CardTitle>11425 SW 14th St.</CardTitle>
                         <CardSubtitle>Card subtitle</CardSubtitle>
-                        <CardText>TCompletely renovated, contemporary 3bed/2bath home with open floor plan on large level lot. No stone left unturned. Custom kitchen and baths, granite counters and modern touches. New hardwoods and carpet throughout. Brand new roof, electrical, plumbing, furnace, water heater, and all new stainless appliances. All new fixtures throughout. Conveniently located near downtown Beaverton.</CardText>
+                        <CardText>No stone left unturned. Custom kitchen and baths,  New hardwoods and carpet throughout. Brand new roof, electrical, plumbing, furnace, water heater, and all new stainless appliances. All new fixtures throughout. Conveniently located near downtown Beaverton.</CardText>
                        
                     </CardBody>
                 </Card>
@@ -59,6 +58,15 @@ export const Restorations = () => {
                 </Card>
             
                
+                <Card><Link to='/Ne68th'>
+                    <CardImg top width="100%" src="https://i.imgur.com/5n0qUXg.jpg" alt="Card image cap" /></Link>
+                    <CardBody>
+                        <CardTitle>Card title</CardTitle>
+                        <CardSubtitle>Card subtitle</CardSubtitle>
+                        <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</CardText>
+                    </CardBody>
+                </Card>
+
             </CardColumns>
         </Container>
     );

@@ -10,7 +10,7 @@ import {SRLWrapper} from 'simple-react-lightbox';
 
 
 
-export const House1 = () => {
+export const SeFrancis = () => {
     return (
 
       

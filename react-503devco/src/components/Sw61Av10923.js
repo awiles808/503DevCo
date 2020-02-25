@@ -11,7 +11,7 @@ import { SRLWrapper } from 'simple-react-lightbox';
 
 
 
-export const House3 = () => {
+export const Sw61Av10923 = () => {
     return (
 
 
