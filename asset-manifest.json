@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/503DevCo/static/css/main.34de6062.chunk.css",
+    "main.js": "/503DevCo/static/js/main.cb062024.chunk.js",
+    "main.js.map": "/503DevCo/static/js/main.cb062024.chunk.js.map",
+    "runtime~main.js": "/503DevCo/static/js/runtime~main.62333205.js",
+    "runtime~main.js.map": "/503DevCo/static/js/runtime~main.62333205.js.map",
+    "static/css/2.8d0ea4bc.chunk.css": "/503DevCo/static/css/2.8d0ea4bc.chunk.css",
+    "static/js/2.71e38494.chunk.js": "/503DevCo/static/js/2.71e38494.chunk.js",
+    "static/js/2.71e38494.chunk.js.map": "/503DevCo/static/js/2.71e38494.chunk.js.map",
+    "index.html": "/503DevCo/index.html",
+    "precache-manifest.44e24512b5d6dd1bb913a736e89c15a2.js": "/503DevCo/precache-manifest.44e24512b5d6dd1bb913a736e89c15a2.js",
+    "service-worker.js": "/503DevCo/service-worker.js",
+    "static/css/2.8d0ea4bc.chunk.css.map": "/503DevCo/static/css/2.8d0ea4bc.chunk.css.map",
+    "static/css/main.34de6062.chunk.css.map": "/503DevCo/static/css/main.34de6062.chunk.css.map",
+    "static/media/Banner.png": "/503DevCo/static/media/Banner.a164c21c.png",
+    "static/media/NotFound.jpg": "/503DevCo/static/media/NotFound.03365386.jpg",
+    "static/media/fiveothreelogo.png": "/503DevCo/static/media/fiveothreelogo.5b6c4381.png",
+    "static/media/font-awesome.min.css": "/503DevCo/static/media/fontawesome-webfont.fee66e71.woff"
+  }
+}
